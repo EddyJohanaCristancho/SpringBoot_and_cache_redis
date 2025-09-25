@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: redis-spring
+  data:
+    redis:
+      host: localhost
+      port: 6379
+  datasource:
+     url: "jdbc:postgresql://localhost:5432/prueba_redis"
+     username: "postgres"
+     password: "12345678"
+     driverClassName: "org.postgresql.Driver"
+  jpa:
+    databasePlatform: "org.hibernate.dialect.PostgreSQLDialect"
+    hibernate:
+      ddl-auto: "update"
+    show-sql: true
